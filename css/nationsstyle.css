@@ -1,0 +1,122 @@
+body{
+    background-image: url(../images/united.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: fantasy;
+    height: 100%;
+}
+html{
+    height: 100%;
+}
+.navbar {
+    margin-bottom: 0px;
+  }
+
+@font-face{
+    font-family: tipo;
+    src: url(../fonts/tipo.otf);
+}
+.menu a{
+    text-decoration: none;
+    color:black;
+    font-size: 200%;
+    padding: 40px;
+    margin: -5px;
+    text-decoration: underline;
+}
+
+.menu{
+    text-align: center;
+    margin-top: 70px;
+    background-color: grey;
+    margin-left:500px;
+    margin-right:500px;
+    border: 2px outset burlywood;
+}
+body{
+    background-image: url(../images/united.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: fantasy;
+}
+.number{
+    font-family: fantasy;
+}
+
+.nation{
+    margin-top:0px;
+    font-size:130%;
+    font-weight: bold;
+}
+.nationbut{
+    margin-top:30px;
+}
+
+.sliderset{
+    margin-top:30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-sample { 
+  color: #000000; 
+  background-color: #80798A; 
+  border-color: #C3C1D1; 
+} 
+ 
+.btn-sample:hover, 
+.btn-sample:focus, 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  color: #000000; 
+  background-color: #225C88; 
+  border-color: #C3C1D1; 
+} 
+ 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  background-image: none; 
+} 
+ 
+.btn-sample.disabled, 
+.btn-sample[disabled], 
+fieldset[disabled] .btn-sample, 
+.btn-sample.disabled:hover, 
+.btn-sample[disabled]:hover, 
+fieldset[disabled] .btn-sample:hover, 
+.btn-sample.disabled:focus, 
+.btn-sample[disabled]:focus, 
+fieldset[disabled] .btn-sample:focus, 
+.btn-sample.disabled:active, 
+.btn-sample[disabled]:active, 
+fieldset[disabled] .btn-sample:active, 
+.btn-sample.disabled.active, 
+.btn-sample[disabled].active, 
+fieldset[disabled] .btn-sample.active { 
+  background-color: #80798A; 
+  border-color: #C3C1D1; 
+} 
+ 
+.btn-sample .badge { 
+  color: #80798A; 
+  background-color: #000000; 
+}

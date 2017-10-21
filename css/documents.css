@@ -1,0 +1,33 @@
+@font-face{
+    font-family: tipo;
+    src: url(../fonts/tipo.otf);
+}
+.menu a{
+    text-decoration: none;
+    color:black;
+    font-size: 200%;    
+    text-decoration: underline;
+}
+
+.menu{
+    margin-top: 70px;
+    background-color: grey;
+    border: 2px outset burlywood;
+}
+body{
+    background-image: url(../images/ww2-wallpaper1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: fantasy;
+}
+
+.number{
+    font-family: fantasy;
+}
+
+
+p{
+    color: blue;
+    background-color: black;
+}

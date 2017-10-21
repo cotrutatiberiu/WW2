@@ -15,19 +15,11 @@
     border: 2px outset burlywood;
 }
 body{
-    background-image: url(../images/ww2-wallpaper1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     font-family: fantasy;
+    background-color: lavender;
 }
 
 .number{
     font-family: fantasy;
 }
 
-
-p{
-    color: blue;
-    background-color: black;
-}

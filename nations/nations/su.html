@@ -7,26 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="../../css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../../css/nations/nationscss.css">
+    <link rel="stylesheet" type="text/css" href="../../css/nationscss/su.css">
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../../css/bootstrap/js/bootstrap.min.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            $(".nation").addClass("animated shake");
-        });
-    </script>
+        <title>World War 2</title>
+        <script>
+                $(document).ready(function () {
+                    $(".target1").fadeToggle(1000);
+                    $(".target2").fadeIn(1500);
+                    $(".target3").fadeIn(2000);
+                    $(".target4").fadeIn(2500);
 
+                    $(".target5").slideToggle(1000);
+                    $(".target6").toggle().slideDown(500).slideUp(500).slideDown(500);
+                });
+            </script>
 
-    <title>World War 2</title>
 
 </head>
 
 <body>
+        
     <!--Navbar + sets-->
+
     <nav class="navbar navbar-inverse navbar-static-top">
 
         <!--Container-->
@@ -114,6 +122,39 @@
         </div>
 
     </nav>
+
+    <div class="content">
+
+        <div class="half1">
+
+            <div class="btn btn-sample box1 target1">ARMY</div>
+            <div class="btn btn-sample box2 target2">
+                <div class="text">LAND</div>
+            </div>
+            <div class="btn btn-sample box3 target3">
+                <div class="text"> NAVY</div>
+            </div>
+            <div class="btn btn-sample box4 target4">
+                <div class="text">AIR</div>
+            </div>
+
+        </div>
+
+
+        <div class="half2">
+
+            <div class="btn btn-sample box11 target5">ECONOMY</div>
+            <div class="btn btn-sample box22 target6">
+                <div class="text">RESOURCES</div>
+            </div>
+            <div class="btn btn-sample box33 target6">
+                <div class="text">FACTORIES</div>
+            </div>
+
+        </div>
+
+    </div>
+    
 
 
 </body>

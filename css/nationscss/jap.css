@@ -1,0 +1,221 @@
+@font-face {
+    font-family: tipo;
+    src: url(../../fonts/tipo.otf);
+  }
+  .menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 200%;
+    padding: 40px;
+    margin: -5px;
+    text-decoration: underline;
+  }
+  
+  .menu {
+    text-align: center;
+    margin-top: 70px;
+    background-color: grey;
+    margin-left: 500px;
+    margin-right: 500px;
+    border: 2px outset burlywood;
+  }
+  .navbar {
+    margin-bottom: 0px;
+    height: 5.3%;
+  }
+  html{
+    height: 100%;
+  }
+  body {
+    font-family: fantasy;
+    height: 100%;
+  }
+  
+  .content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 94.7%;
+  }
+  .half1 {
+    grid-area: 1000px/1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-image: url(../../images/army/jap.jpg);
+    background-size: cover;
+    grid-gap: 10px;
+    align-items: center;
+    border: 5px black solid;
+  }
+  
+  .half2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-image: url(../../images/army/economy.jpg);
+    background-size: cover;
+    grid-gap: 10px;
+    align-items: center;
+    border: 5px black solid;
+  }
+  
+  .box1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: none;
+  }
+  .box2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-image: url(../../images/army/buttons/jap/japland.jpg);
+    background-size: cover;
+    padding-bottom: 120px;
+    margin-left: 10px;
+    display: none;
+  }
+  .box3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-image: url(../../images/army/buttons/jap/japnavy.jpg);
+    background-size: cover;
+    padding-bottom: 120px;
+    display: none;
+  }
+  .box4 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background-image: url(../../images/army/buttons/jap/japair.jpg);
+    background-size: cover;
+    padding-bottom: 120px;
+    margin-right: 10px;
+    display: none;
+  }
+  
+  .box11 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    display: none;
+  }
+  .box22 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background-image: url(../../images/economy/resourcesjap.jpg);
+    padding-bottom: 120px;
+    background-size: cover;
+    margin-left: 10px;
+    display: none;
+  }
+  .box33 {
+    grid-column: 3/5;
+    grid-row: 2/3;
+    background-image: url(../../images/economy/factories.jpg);
+    background-size: cover;
+    padding-bottom: 120px;
+    margin-right: 10px;
+    display: none;
+  }
+  
+  .text {
+    background-color: #80798a;
+    color: black;
+    border-color: #c3c1d1;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px 50px;
+  }
+  
+  @media screen and (max-width: 470px) {
+    .box1 {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+    .box2 {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      background-image: url(../../images/army/buttons/jap/japland.jpg);
+      background-size: cover;
+      padding: 50px;
+      margin-left: 0px;
+    }
+    .box3 {
+      grid-column: 2/3;
+      grid-row: 3/4;
+      background-image: url(../../images/army/buttons/jap/japnavy.jpg);
+      background-size: cover;
+      padding: 50px;
+    }
+    .box4 {
+      grid-column: 2/3;
+      grid-row: 4/5;
+      background-image: url(../../images/army/buttons/jap/japair.jpg);
+      background-size: cover;
+      margin-right: 0px;
+    }
+    .box11 {
+      grid-column: 2/4;
+      grid-row: 1/2;
+    }
+    .box22 {
+      grid-column: 2/4;
+      grid-row: 2/3;
+      background-image: url(../../images/economy/resourcesjap.jpg);
+      padding-bottom: 100px;
+      background-size: cover;
+      margin-left: 0px;
+    }
+    .box33 {
+      grid-column: 2/4;
+      grid-row: 3/4;
+      background-image: url(../../images/economy/factories.jpg);
+      background-size: cover;
+      padding-bottom: 100px;
+      margin-right: 0px;
+    }
+  }
+  
+  .btn-sample {
+    color: #000000;
+    background-color: #80798a;
+    border-color: #c3c1d1;
+  }
+  
+  .btn-sample:hover,
+  .btn-sample:focus,
+  .btn-sample:active,
+  .btn-sample.active,
+  .open .dropdown-toggle.btn-sample {
+    color: #000000;
+    background-color: #225c88;
+    border-color: #c3c1d1;
+  }
+  
+  .btn-sample:active,
+  .btn-sample.active,
+  .open .dropdown-toggle.btn-sample {
+    background-image: none;
+  }
+  
+  .btn-sample.disabled,
+  .btn-sample[disabled],
+  fieldset[disabled] .btn-sample,
+  .btn-sample.disabled:hover,
+  .btn-sample[disabled]:hover,
+  fieldset[disabled] .btn-sample:hover,
+  .btn-sample.disabled:focus,
+  .btn-sample[disabled]:focus,
+  fieldset[disabled] .btn-sample:focus,
+  .btn-sample.disabled:active,
+  .btn-sample[disabled]:active,
+  fieldset[disabled] .btn-sample:active,
+  .btn-sample.disabled.active,
+  .btn-sample[disabled].active,
+  fieldset[disabled] .btn-sample.active {
+    background-color: #80798a;
+    border-color: #c3c1d1;
+  }
+  
+  .btn-sample .badge {
+    color: #80798a;
+    background-color: #000000;
+  }
+  

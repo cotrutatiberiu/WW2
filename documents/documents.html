@@ -22,7 +22,52 @@
             $("#target1").click(function () {
                 $(".wrapper").fadeToggle(400);
                 $(".wrapper").css({ "display": "grid" });
-                $(".btn").slideToggle(1000);
+                $(".maker").slideToggle(1000);
+                $("#btn1").click(function () {
+                    $(".maker").css({ "background-color": "grey" });
+                })
+                $("#btn2").click(function () {
+                    $(".maker").css({ "background-color": "red" });
+                })
+                $("#btn3").click(function () {
+                    $(".maker").css({ "background-color": "pink" });
+                })
+                $("#btn4").click(function () {
+                    $(".maker").css({ "background-color": "purple" });
+                })
+                $("#btn5").click(function () {
+                    $(".maker").css({ "background-color": "yellow" });
+                })
+                $("#btn6").click(function () {
+                    $(".maker").css({ "background-color": "brown" });
+                })
+                $(".btn-primary").click(function () {
+                    $(".maker").removeClass("btn-info btn-primary btn-danger btn-warning btn-default btn-success").addClass("btn-primary");
+                })
+                $(".btn-info").click(function () {
+                    $(".maker").removeClass("btn-primary btn-danger btn-warning btn-default btn-success").addClass("btn-info");
+                })
+                $(".btn-danger").click(function () {
+                    $(".maker").removeClass("btn-info btn-primary btn-warning btn-default btn-success").addClass("btn-danger");
+                })
+                $(".btn-default").click(function () {
+                    $(".maker").removeClass("btn-info btn-primary btn-danger btn-warning btn-success").addClass("btn-default");
+                })
+                $(".btn-success").click(function () {
+                    $(".maker").removeClass("btn-info btn-primary btn-danger btn-warning btn-default").addClass("btn-success");
+                })
+                $(".btn-warning").click(function () {
+                    $(".maker").removeClass("btn-info btn-primary btn-danger btn-default btn-success").addClass("btn-warning");
+                })
+
+
+            });
+            $("#target2").fadeOut(200);
+            $("#target2").mouseover(function () {
+                $("#target2").fadeIn(500);
+            });
+            $("#target2").click(function () {
+                $("#target3").fadeToggle(500);
             });
 
         });
@@ -119,87 +164,93 @@
 
     </nav>
 
+    <ul align="center">
+        <li>
+            <button type="button" id="target2">
+                <p>secret!
+                </p>
+            </button>
+        </li>
 
-    <center>
-        <button type="button" id="target1">
-            <h1>Show Content</h1>
-        </button>
-    </center>
+        <li>
+            <button type="button" id="target1">
+                <h1>Show Content</h1>
+            </button>
+        </li>
+
+        <li>
+            <button type="button" id="target3" style="display:none">
+                <p>SECRET FOUND!</p>
+            </button>
+        </li>
+
+
+    </ul>
 
     <div class="wrapper">
 
-        <button type="button" class="box1 btn btn-info">asd</button>
-        <button type="button" class="box2 btn btn-info">asd</button>
-        <button type="button" class="box3 btn btn-info">asd</button>
-        <button type="button" class="box4 btn btn-info">asd</button>
-        <button type="button" class="box5 btn btn-info">asd</button>
-        <button type="button" class="box6 btn btn-info">asd</button>
-        <button type="button" class="box7 btn btn-info">asd</button>
-        <button type="button" class="box8 btn btn-info">asd</button>
-        <button type="button" class="box9 btn btn-info">asd</button>
-        <button type="button" class="box10 btn btn-info">asd</button>
-        <button type="button" class="box11 btn btn-info">asd</button>
-        <button type="button" class="box12 btn btn-info">asd</button>
+        <button type="button" class="box1 btn btn-info maker">asd</button>
+        <button type="button" class="box2 btn btn-info maker">asd</button>
+        <button type="button" class="box3 btn btn-info maker">asd</button>
+        <button type="button" class="box4 btn btn-info maker">asd</button>
+        <button type="button" class="box5 btn btn-info maker">asd</button>
+        <button type="button" class="box6 btn btn-info maker">asd</button>
+        <button type="button" class="box7 btn btn-info maker">asd</button>
+        <button type="button" class="box8 btn btn-info maker">asd</button>
+        <button type="button" class="box9 btn btn-info maker">asd</button>
+        <button type="button" class="box10 btn btn-info maker">asd</button>
+        <button type="button" class="box11 btn btn-info maker">asd</button>
+        <button type="button" class="box12 btn btn-info maker">asd</button>
 
+        <ul class="change">
+            <li>
+                <p>Change button style:</p>
+            </li>
+            <li>
+                <button type="button" class="btn btn-primary">Primary</button>
+            </li>
+            <li>
+                <button type="button" class="btn btn-info">Info</button>
+            </li>
+            <li>
+                <button type="button" class="btn btn-danger">Danger</button>
+            </li>
+            <li>
+                <button type="button" class="btn btn-default">Default</button>
+            </li>
+            <li>
+                <button type="button" class="btn btn-success">Succes</button>
+            </li>
+            <li>
+                <button type="button" class="btn btn-warning">Warning</button>
+            </li>
+        </ul>
 
+        <ul class="change">
+            <li>
+                <p>Change color:</p>
+            </li>
+            <li>
+                <button type="button" id="btn1">Grey</button>
+            </li>
+            <li>
+                <button type="button" id="btn2">Red</button>
+            </li>
+            <li>
+                <button type="button" id="btn3">Pink</button>
+            </li>
+            <li>
+                <button type="button" id="btn4">Purple</button>
+            </li>
+            <li>
+                <button type="button" id="btn5">Yellow</button>
+            </li>
+            <li>
+                <button type="button" id="btn6">Brown</button>
+            </li>
+        </ul>
 
     </div>
-
-    <ul>
-        <li>
-            <p>Change button style:</p>
-        </li>
-        <li>
-            <button type="button" class="btn btn-primary">Blue</button>
-        </li>
-        <li>
-            <button type="button" class="btn btn-info">Blue</button>
-        </li>
-        <li>
-            <button type="button" class="btn btn-danger">Blue</button>
-        </li>
-        <li>
-            <button type="button" class="btn btn-default">Blue</button>
-        </li>
-        <li>
-            <button type="button" class="btn btn-succes">Blue</button>
-        </li>
-        <li>
-            <button type="button" class="btn btn-warning">Blue</button>
-        </li>
-        <li>
-            <button type="button" class="btn btn-link">Blue</button>
-        </li>
-    </ul>
-
-    <ul>
-        <li>
-            <p>Change color:</p>
-        </li>
-        <li>
-            <button type="button" class="btn btn-primary">Blue</button>
-        </li>
-        <li>
-            <button type="button" class="btn btn-info">Blue</button>
-        </li>
-        <li>
-            <button type="button" class="btn btn-danger">Blue</button>
-        </li>
-        <li>
-            <button type="button" class="btn btn-default">Blue</button>
-        </li>
-        <li>
-            <button type="button" class="btn btn-succes">Blue</button>
-        </li>
-        <li>
-            <button type="button" class="btn btn-warning">Blue</button>
-        </li>
-        <li>
-            <button type="button" class="btn btn-link">Blue</button>
-        </li>
-    </ul>
-
-
 
 </body>
 

@@ -16,6 +16,17 @@
 
 
     <title>World War 2</title>
+    <script>
+        $(document).ready(function () {
+
+            $("#target1").click(function () {
+                $(".wrapper").fadeToggle(400);
+                $(".wrapper").css({ "display": "grid" });
+                $(".btn").slideToggle(1000);
+            });
+
+        });
+    </script>
 
 </head>
 
@@ -109,28 +120,84 @@
     </nav>
 
 
-
+    <center>
+        <button type="button" id="target1">
+            <h1>Show Content</h1>
+        </button>
+    </center>
 
     <div class="wrapper">
 
-        <div class="box1 btn btn-info">asd</div>
-        <div class="box2 btn btn-info">asd</div>
-        <div class="box3 btn btn-info">asd</div>
-        <div class="box4 btn btn-info">asd</div>
-        <div class="box5 btn btn-info">asd</div>
-        <div class="box6 btn btn-info">asd</div>
-        <div class="box7 btn btn-info">asd</div>
-        <div class="box8 btn btn-info">asd</div>
-        <div class="box9 btn btn-info">asd</div>
-        <div class="box10 btn btn-info">asd</div>
-        <div class="box11 btn btn-info">asd</div>
-        <div class="box12 btn btn-info">asd</div>
+        <button type="button" class="box1 btn btn-info">asd</button>
+        <button type="button" class="box2 btn btn-info">asd</button>
+        <button type="button" class="box3 btn btn-info">asd</button>
+        <button type="button" class="box4 btn btn-info">asd</button>
+        <button type="button" class="box5 btn btn-info">asd</button>
+        <button type="button" class="box6 btn btn-info">asd</button>
+        <button type="button" class="box7 btn btn-info">asd</button>
+        <button type="button" class="box8 btn btn-info">asd</button>
+        <button type="button" class="box9 btn btn-info">asd</button>
+        <button type="button" class="box10 btn btn-info">asd</button>
+        <button type="button" class="box11 btn btn-info">asd</button>
+        <button type="button" class="box12 btn btn-info">asd</button>
 
 
 
     </div>
 
+    <ul>
+        <li>
+            <p>Change button style:</p>
+        </li>
+        <li>
+            <button type="button" class="btn btn-primary">Blue</button>
+        </li>
+        <li>
+            <button type="button" class="btn btn-info">Blue</button>
+        </li>
+        <li>
+            <button type="button" class="btn btn-danger">Blue</button>
+        </li>
+        <li>
+            <button type="button" class="btn btn-default">Blue</button>
+        </li>
+        <li>
+            <button type="button" class="btn btn-succes">Blue</button>
+        </li>
+        <li>
+            <button type="button" class="btn btn-warning">Blue</button>
+        </li>
+        <li>
+            <button type="button" class="btn btn-link">Blue</button>
+        </li>
+    </ul>
 
+    <ul>
+        <li>
+            <p>Change color:</p>
+        </li>
+        <li>
+            <button type="button" class="btn btn-primary">Blue</button>
+        </li>
+        <li>
+            <button type="button" class="btn btn-info">Blue</button>
+        </li>
+        <li>
+            <button type="button" class="btn btn-danger">Blue</button>
+        </li>
+        <li>
+            <button type="button" class="btn btn-default">Blue</button>
+        </li>
+        <li>
+            <button type="button" class="btn btn-succes">Blue</button>
+        </li>
+        <li>
+            <button type="button" class="btn btn-warning">Blue</button>
+        </li>
+        <li>
+            <button type="button" class="btn btn-link">Blue</button>
+        </li>
+    </ul>
 
 
 
